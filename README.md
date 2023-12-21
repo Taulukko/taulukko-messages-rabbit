@@ -33,7 +33,7 @@ import { RabbitProvider } from 'taulukko-messages-rabbit';
 
 async function initServer() {
   const server = Server.create({
-    port: 5672 // Default RabbitMQ port,
+    port: 7777,
     provider: new RabbitProvider( {host:"localhost", port:5672 } )
   });
   await server.open();
