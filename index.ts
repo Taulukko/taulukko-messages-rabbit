@@ -1,7 +1,7 @@
 import { Provider,ServerData } from "taulukko-messages";
 
 export class RabbitProvider implements Provider{
-    constructor(){}
+    constructor(options:any){}
     async open():Promise<any>{
         throw new Error("Not implemented yet");
     }
